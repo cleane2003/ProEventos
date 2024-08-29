@@ -1,3 +1,5 @@
+using System;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -5,7 +7,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using ProEventos.Api.Models;
 using ProEventos.Application;
 using ProEventos.Application.Contratos;
 using ProEventos.Persistence;
@@ -32,6 +33,7 @@ namespace ProEventos.Api
                     .AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = 
                         Newtonsoft.Json.ReferenceLoopHandling.Ignore
                     );
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddScoped<IEventoService, EventoService>();
             services.AddScoped<IEventoPersist, EventoPersist>();
