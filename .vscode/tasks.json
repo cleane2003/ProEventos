@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "dotnet",
+			"task": "build c:\\Users\\clean\\Documents\\Curso\\Udemy\\dotnet\\Back\\src\\ProEventos.Api\\ProEventos.Api.csproj",
+			"file": "c:\\Users\\clean\\Documents\\Curso\\Udemy\\dotnet\\Back\\src\\ProEventos.Api\\ProEventos.Api.csproj",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "dotnet: build c:\\Users\\clean\\Documents\\Curso\\Udemy\\dotnet\\Back\\src\\ProEventos.Api\\ProEventos.Api.csproj"
+		}
+	]
+}
